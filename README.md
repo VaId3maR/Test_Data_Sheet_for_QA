@@ -40,10 +40,7 @@
 + Your data will be loaded into the editor automatically.
 
 ✅ Best Practices
-Use separate sections for each screen or feature under test.
-
-Hover over cells to reveal full information in tooltips.
-
-Lock rows when data entry is complete to avoid accidental edits.
-
-Export regularly to avoid data loss.
++ Use separate sections for each screen or feature under test.
++ Hover over cells to reveal full information in tooltips.
++ Lock rows when data entry is complete to avoid accidental edits.
++ Export regularly to avoid data loss.
