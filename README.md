@@ -4,7 +4,7 @@
 > This tool allows you to create and manage structured data sheets for testing purposes. It features editable tabs and rows with export/import functionality via JSON.
 
 ### Main Interface Overview
-<img width="1920" height="911" alt="Main Interface Overview" src="https://github.com/user-attachments/assets/8e6b683e-aa9d-4b98-b159-cf2b207890d2" />
+<img width="1920" height="911" alt="2025-09-06_21h55_09" src="https://github.com/user-attachments/assets/0eab2ad2-2de6-4b09-bfbb-3e6cd91c0b97" />
 
 + Each section (or "tab") represents a different group of test data.
 + Each row contains detailed information about a field: name, type, required status, examples, boundaries, invalid input, and expected behavior.
