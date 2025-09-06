@@ -18,6 +18,15 @@
       --font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
     }
 
+    th:first-child {
+      font-weight: bold;
+    }
+
+    td:first-child input[type="text"] {
+      border: 2px solid var(--primary-dark);
+      box-shadow: 0 0 4px rgba(82, 108, 163, 0.4);
+    }
+
     body {
       font-family: var(--font-family);
       background-color: var(--gray-light);
@@ -185,6 +194,13 @@
         padding: 8px 12px;
       }
     }
+
+    .top-buttons {
+      margin-bottom: 15px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
   </style>
 
 </head>
@@ -193,14 +209,16 @@
 
   <h1>Test Data Sheet</h1>
 
+  <div class="top-buttons">
+    <button class="add-tab" onclick="addTab()">+ Add new section</button>
+    <button class="export-json" onclick="exportJSON()">📤 Save to JSON</button>
+    <button class="import-json" onclick="document.getElementById('importFile').click()">📥 Load from JSON</button>
+    <input type="file" id="importFile" accept=".json" onchange="importJSON(event)" />
+  </div>
+
   <div class="tabs" id="tabs"></div>
 
   <div id="tab-contents"></div>
-
-  <button class="add-tab" onclick="addTab()">+ Add new section</button>
-  <button class="export-json" onclick="exportJSON()">📤 Save to JSON</button>
-  <button class="import-json" onclick="document.getElementById('importFile').click()">📥 Load from JSON</button>
-  <input type="file" id="importFile" accept=".json" onchange="importJSON(event)" />
 
   <script>
     let tabsData = [
